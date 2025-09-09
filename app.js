@@ -52,8 +52,10 @@ let btn5=document.querySelector(".btn5");
  })
 
 btn4.addEventListener("click",()=>{
-    val--;
+   if(val>0){
+     val--;
     count1.innerHTML=`<h3>${val}</h3><p>Characters</p>`;
+   }
 })
 
  
