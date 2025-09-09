@@ -48,9 +48,9 @@ let btn5=document.querySelector(".btn5");
  let count3=document.querySelector(".stats .stat3");
 
  let val=0;
-   card.addEventListener("keypress",()=>{
+   card.addEventListener("input",()=>{
        
-       count1.innerHTML=`<h3>${card.value.length+1}</h3><p>Characters</p>`;
+       count1.innerHTML=`<h3>${card.value.length}</h3><p>Characters</p>`;
        let arr=card.value.split(" ");
        count2.innerHTML=`<h3>${arr.length}</h3><p>Number of Spaces</p>`;
        count3.innerHTML=`<h3>${arr.length}</h3><p>Number of Word</p>`;
